@@ -39,14 +39,15 @@ background: rgba(0,0,0,.6); color: white;font-size: 22px;font-weight: bold;lette
 
 /* pad适配 */
 @media screen and (max-width:1080px){
-.font-logo{font-size: 45px}
+.font-logo{font-size: 42px}
 .container-md{width: 100%;box-sizing: border-box}
 .nav{display: none}
 .hero{width: 50%;}
 }
 /* 手机端适配 */
 @media screen and (max-width:640px){
-    .font-logo{font-size: 45px}
+    .font-logo{font-size: 42px}
+    .swiper-slide img{height:446px;}
     .headline-text{width: 80%;margin-left: 8px}
     .news-ad .news{vertical-align: 14px}
     .hero{width: 100%;}

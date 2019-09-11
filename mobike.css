@@ -1,0 +1,56 @@
+
+.all{position: relative;}
+/* 版心公用 */
+.container-md{width: 1080px;margin: 0 auto;padding: 0 20px}
+.header{height: 80px;position: absolute;top: 0;left: 0;width: 100%;z-index: 99;}
+.logo{width: 100px;height: 37px;padding-top: 22px;float: left;}
+.nav{float: right}
+.nav li{font-size: 16px;font-size: 16px;line-height: 80px;color: white;float: left;position: relative;}
+.nav li a{padding: 0 20px;color:white}
+.layer{display:none;width: 240px;height: 204px;background: white;border-radius: 3px;box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);position: absolute;left: -18px;top: 64px;}
+.layer::before{content: "";display: block;width: 0;height: 0;border-width: 6px;border-style: solid;border-color: transparent transparent white transparent;position: absolute;top: -12px;left: 26px;}
+.nav li:hover .layer{display: block;}
+/* header-txt */
+/* 行高如果不带单位，表示的是字体大小的多少倍 */
+.header-txt{position: absolute;top: 50%;width: 100%;z-index: 99;}
+.font-logo{font-size: 67px;line-height: 1;
+color: black;margin-bottom: 20px;letter-spacing: -3px}
+.use-btn{display: inline-block;padding: 14px 26px;
+background: rgba(0,0,0,.6); color: white;font-size: 22px;font-weight: bold;letter-spacing: .1em;border-radius: 6px}
+/* 轮播图 */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}  
+.swiper-slide img{width: 100%;height: 100%;}
+.news-ad{position: absolute;bottom: 0;left: 0;width: 100%;z-index: 99;background: rgba(0, 0, 0, .6);padding: 10px 0;font-size: 0}
+.news-ad .news{display:inline-block;padding:0 8px;;font-size: 12px;color: white;line-height: 18px;border-radius: 4px;background: linear-gradient(to bottom,#ec614f 0%,#ff2e2e);box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2)}
+.headline-text{display: inline-block;font-size: 16px;color: white}
+.heros{margin-left: -3px;margin-top: 1.3px}
+.hero{float: left;
+    width: 25%;height: 260px;background-repeat: no-repeat;background-position: center;background-size: cover;font-size: 24px;color: white;text-align: center;padding-top: 37px;box-sizing: border-box;border: 1px solid white}
+.meta-links{width: 33.33%;float: left;padding: 45px 0}
+.meta-links .icon{display: inline-block;width: 50px;height: 50px;margin-right: 10px;background-repeat: no-repeat;background-size: contain;background-position: center;vertical-align: middle}
+.meta-links .txt{display: inline-block;vertical-align: middle;text-align: left;}
+.txt h3{font-weight: 400;font-size: 16px}
+.txt p{font-size: 16px;font-weight: 300}
+.meta-links:nth-child(2){text-align: center}
+.meta-links:nth-child(3){text-align: right}
+
+/* pad适配 */
+@media screen and (max-width:1080px){
+.font-logo{font-size: 45px}
+.container-md{width: 100%;box-sizing: border-box}
+.nav{display: none}
+.hero{width: 50%;}
+}
+/* 手机端适配 */
+@media screen and (max-width:640px){
+    .font-logo{font-size: 45px}
+    .headline-text{width: 80%;margin-left: 8px}
+    .news-ad .news{vertical-align: 14px}
+    .hero{width: 100%;}
+    .meta-links{width: 100%;padding: 20px 0}
+    .meta-links:nth-child(2){text-align: left}
+    .meta-links:nth-child(3){text-align: left}
+}
